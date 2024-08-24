@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <!-- navber -->
+        <section class="navber">
+            <nav>
+                <div class="logo">
+                    <img src="/images/logo1.png" alt="">
+                </div>
+                <div class="nav-link">
+                    <h3>Home</h3>
+                    <h3>Shop</h3>
+                    <h3>Cart</h3>
+                </div>
+                <div class="search-btn">
+                    <i class="ri-search-line"></i>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg> -->
+                    <input type="search" placeholder="search">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </div>
+            </nav>
+        </section>
+        <!-- banner section -->
+        <section class="banner container">
+            <div class="left-banner">
+                <div class="first-btn">Bike Delivary </div>
+                <h1>The Fastest <br>
+                    <span>Delivery</span><br>
+                    In <span>Your City</span>
+                </h1>
+                <p>Experience the ultimate burger crafted with the freshest ingredients, sizzling patties, and flavors
+                    that
+                    will leave you craving more. Whether you like it classic or loaded with all the fixings, we've got
+                    the
+                    perfect burger for you. </p>
+                <div class="order-btn">
+                    <button class="btn1"><a href="">Order Now</a></button>
+                    <button class="btn2"><a href="">Order Process</a></button>
+                </div>
+
+            </div>
+            <div class="right-banner">
+                <div class="cart">
+                    <img src="images/bannerpic1.png" alt="">
+                    <h3>Burger</h3>
+                    <p>Mushroom Sauce</p>
+                    <span>
+                        <p>$5.50</p>
+                    </span>
+
+                </div>
+                <div class="cart">
+                    <img src="images/bannerpic2.png" alt="">
+                    <h3>Food Combo</h3>
+                    <p>Mushroom Sauce</p>
+                    <span>
+                        <p>$5.50</p>
+                    </span>
+
+                </div>
+                <div class="cart">
+                    <img src="images/bannerpic3.png" alt="">
+                    <h3>Pizza</h3>
+                    <p>Mushroom Sauce</p>
+                    <span>
+                        <p>$5.50</p>
+                    </span>
+
+                </div>
+                <div class="cart">
+                    <img src="images/bannerpic4.png" alt="">
+                    <h3>Cake</h3>
+                    <p>Mushroom Sauce</p>
+                    <span>
+                        <p>$5.50</p>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- location -->
+        <section class="location container">
+            <div class="loc1">
+                <div class="icon"><i class="ri-time-line"></i></div>
+                <h3>Today 10.00AM - 10.00PM</h3>
+                <p>Working Time</p>
+            </div>
+            <div class="loc1 loc2">
+                <div class="icon"><i class="ri-map-pin-line"></i></div>
+                <h3>Sitakund,Chittagong</h3>
+                <p>Our Location</p>
+            </div>
+            <div class="loc1">
+                <div class="icon"><i class="ri-phone-line"></i></i></div>
+                <h3>+008 01705192734</h3>
+                <p>Phone Number</p>
+            </div>
+        </section>
+        <!-- product section -->
+        <div class="title">
+            <p>Product</p>
+            <h1>Most Popular Items</h1>
+        </div>
+
+        <div style="display: flex;align-items: center;justify-content: center;">
+
+            <section class="product container">
+
+                <div class="pro-cart">
+                    <img src="images/product1.png" alt="">
+                    <div class="pro-1">
+                        <h1 id="pro-name">Gyro Sandwhic</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button id="cart-btn">Add To Cart</button>
+                        <p>$15.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="images/product2.png" alt="">
+                    <div class="pro-1">
+                        <h1>Enchilade</h1>
+                        <span>&#10022<span style="color: black;"> 5</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$25.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="images/product3.png" alt="">
+                    <div class="pro-1">
+                        <h1>Green Beans</h1>
+                        <span>&#10022<span style="color: black;"> 5</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$5.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="images/product4.png" alt="">
+                    <div class="pro-1">
+                        <h1>Chicken Pot Pie</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$12.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="images/product5.png" alt="">
+                    <div class="pro-1">
+                        <h1>Green Salad</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$12.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="images/product6.png" alt="">
+                    <div class="pro-1">
+                        <h1>Pizza</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$12.50</p>
+                    </div>
+                </div>
+
+                <!-- for load more -->
+                <div class="pro-cart">
+                    <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1724310231~exp=1724313831~hmac=14f33bb30280a981e6f7e548db1236be920bd70ba62717ee1cf01c0c4ea2c98a&w=1060"
+                        alt="">
+                    <div class="pro-1">
+                        <h1>Gyro Sandwhic</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$15.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="https://img.freepik.com/free-photo/view-delicious-food-assortment_23-2149598944.jpg?t=st=1724310289~exp=1724313889~hmac=f862fbb066a50555f8fedd9d1beb62f95056bf067968d9d00dee5d1d8d08508d&w=1060"
+                        alt="">
+                    <div class="pro-1">
+                        <h1>Fish</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$15.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="https://img.freepik.com/premium-photo/rice-with-red-fish-green-beans-spinach-black-plate-diet-top-view-free-space-text_187166-26345.jpg?w=1060"
+                        alt="">
+                    <div class="pro-1">
+                        <h1>Green Beans</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$15.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="https://img.freepik.com/free-photo/smoked-mackerel-fresh-salad_2829-10922.jpg?t=st=1724310432~exp=1724314032~hmac=8a078dc7b329632fd29e8ff67e855461f9c434a3f9976efc428396e15b1155cf&w=1060"
+                        alt="">
+                    <div class="pro-1">
+                        <h1>Fresh Salad</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$15.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="https://img.freepik.com/free-photo/farfalle-pasta-durum-wheat-with-baked-meatballs-chicken-fillet-tomato-sauce-salad-bowl_2829-11169.jpg?t=st=1724310485~exp=1724314085~hmac=17b1746398d135942d89cd14f1b97d668df3d1468b018c8a273990afb2f3b09d&w=1060"
+                        alt="">
+                    <div class="pro-1">
+                        <h1>Pasta</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$15.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-cart">
+                    <img src="https://img.freepik.com/free-photo/baked-salmon-garnished-with-asparagus-tomatoes-with-herbs_2829-14516.jpg?t=st=1724310532~exp=1724314132~hmac=63f11aac80990882838776cb06f8c706575defc494c4b3af8b13e053049bf85f&w=1060"
+                        alt="">
+                    <div class="pro-1">
+                        <h1>Salmon Fish</h1>
+                        <span>&#10022<span style="color: black;"> 4.9</span></span>
+                    </div>
+                    <div class="pro-2">
+
+                        <button>Add To Cart</button>
+                        <p>$15.50</p>
+                    </div>
+                </div>
+
+                <div class="pro-btn">
+                    <button id="pro-btn">See More Products</button>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- service section  -->
+        <div class="title">
+            <p>Service</p>
+            <h1>Why Choose Our Favorite Food</h1>
+        </div>
+        <section class="service container">
+            <div class="service-card">
+                <div class="ser-img">
+                    <img src="images/Food.png" alt="">
+                </div>
+                <div class="ser-content">
+                    <h1>Qualityfull Food</h1>
+                    <p>But I must explain to you how all this
+                        mistaken idea of denouncing pleasur and
+                        prasising pain was bron.</p>
+
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="ser-img">
+                    <img src="images/spoon.png" alt="">
+                </div>
+                <div class="ser-content">
+                    <h1>Healthy Food</h1>
+
+                    <p>But I must explain to you how all this
+                        mistaken idea of denouncing pleasur and
+                        prasising pain was bron.</p>
+
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="ser-img">
+                    <img src="images/delivery.png" alt="">
+                </div>
+                <div class="ser-content">
+                    <h1>Fast Delivery</h1>
+                    <p>But I must explain to you how all this
+                        mistaken idea of denouncing pleasur and
+                        prasising pain was bron.</p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- testimonial -->
+        <div class="title">
+            <p>Testimonial</p>
+            <h1>Our Happy Client Says</h1>
+        </div>
+        <!-- <section class="testimonial container">
+            <div class="test-content">
+                <div class="inner-test-content">
+                    <img src="/images/Mask group.png" alt="">
+                    <p>John Wick<br>CEO $ co-founder</p>
+
+                </div>
+                <div class="prep">
+                    <p>
+                        "The food here is nothing short of extraordinary! Each dish is crafted with such care, and the
+                        flavors are a perfect balance of bold and subtle. I love how fresh everything tastes, from the
+                        crisp vegetables to the tender meats. Every
+                        meal feels like a special occasion, even when I’m just ordering for a regular weekday dinner!"
+                    </p>
+                </div>
+            </div>
+
+            <div class="test-img">
+                <img src="images/testimonial.png" alt="">
+            </div>
+
+        </section> -->
+
+        <!-- testimonial section extra function adding  -->
+
+        <section class="testimonial container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="inner-test-content">
+                            <img src="/images/Mask group.png" alt="">
+                            <p>John Wick<br>CEO $ co-founder</p>
+                        </div>
+                        <div class="prep">
+                            <p>
+                                "The food here is nothing short of extraordinary! Each dish is crafted with such care,
+                                and the
+                                flavors are a perfect balance of bold and subtle. I love how fresh everything tastes,
+                                from the
+                                crisp vegetables to the tender meats. Every
+                                meal feels like a special occasion, even when I’m just ordering for a regular weekday
+                                dinner!"
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner-test-content">
+                            <img src="https://img.freepik.com/premium-photo/successful-businessman-suit-with-tie-office-portrait_151013-48242.jpg?w=1380"
+                                alt="">
+                            <p>Tony Stark<br>CEO $ co-founder</p>
+                        </div>
+                        <div class="prep">
+                            <p>
+                                "The food here is nothing short of extraordinary! Each dish is crafted with such care,
+                                and the
+                                flavors are a perfect balance of bold and subtle. I love how fresh everything tastes,
+                                from the
+                                crisp vegetables to the tender meats. Every
+                                meal feels like a special occasion, even when I’m just ordering for a regular weekday
+                                dinner!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner-test-content">
+                            <img src="https://img.freepik.com/free-photo/front-view-young-businessman-office-clothing_23-2148763859.jpg?t=st=1724388629~exp=1724392229~hmac=a1dba608b8142d50cac42f492585b758466c52db2d05c7259599c0c6009a3a6b&w=996"
+                                alt="">
+                            <p>Clint Barton<br>CEO $ co-founder</p>
+                        </div>
+                        <div class="prep">
+                            <p>
+                                "The food here is nothing short of extraordinary! Each dish is crafted with such care,
+                                and the
+                                flavors are a perfect balance of bold and subtle. I love how fresh everything tastes,
+                                from the
+                                crisp vegetables to the tender meats. Every
+                                meal feels like a special occasion, even when I’m just ordering for a regular weekday
+                                dinner!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div style="color: #FFD43B;" class="swiper-button-next"></div>
+                <div style="color: #FFD43B;" class="swiper-button-prev"></div>
+            </div>
+
+
+            <div class="test-img">
+                <img src="images/testimonial.png" alt="">
+            </div>
+
+        </section>
+
+
+
+        <!-- contact section -->
+        <section class="contact container">
+            <div class="cont-sec">
+                <div class="cont-img">
+                    <img src="images/bannerpic1.png" alt="">
+                </div>
+                <div class="cont-title">
+                    <h1>Subcribe To Our Newsletter</h1>
+                    <p>We're thrilled to have you here. Indulge in our delicious, handcrafted burgers made with the
+                        freshest ingredients.</p>
+                    <div class="cont-form">
+                        <input id="email-input" type="email" placeholder="type your email">
+                        <button id="subs">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section for mobile device  -->
+        <section class="mo-contact">
+            <div class="mo-cont-form">
+                <div class="mo-cont-form2">
+                    <input id="email-input" type="email" placeholder="type your email">
+                    <button id="subs" onclick="alert('Hello!')">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section  -->
+
+        <div class="footer container">
+            <div class="foot-container">
+                <div class="first-foot">
+                    <img src="/images/logo1.png" alt="">
+                    <p>Thank you for dining with us! We appreciate your support and hope you enjoyed your experience.
+                        Follow us on social media for the latest updates and special offers. See you next time! 🍔</p>
+                    <div class="socal-icons">
+
+                        <a href="https://www.facebook.com/profile.php?id=61552143137370"><img src="images/Facebook.png"
+                                alt=""></a>
+                        <a href="https://www.instagram.com/soumensen411/"><img src="images/Instagram.png" alt=""></a>
+                        <img src="images/Twitter.png" alt="">
+                        <a href="https://www.linkedin.com/in/soumen-sen-2097b8231/"><img src="images/Linkind.png"
+                                alt=""></a>
+
+                    </div>
+                </div>
+
+                <div class="sec-foot">
+                    <h1>Opening Restaurant</h1>
+                    <p>sat-wet:09:00am-10:00pm</p>
+                    <p>Thursdayt:09:00am-11:00pm</p>
+                    <p>Friday:09:00am-10:00pm</p>
+                </div>
+
+                <div class="third-foot">
+                    <h1>User Link</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Order Delivery</p>
+                    <p>Payment & Tex</p>
+                    <p>Terms of Services</p>
+                </div>
+
+                <div class="forth-foot">
+                    <h1>Contact Us</h1>
+                    <p>Sitakund,Chittagong</p>
+                    <p>+88 01705192734</p>
+                    <p>+88 01855856819</p>
+                    <div class="input">
+                        <input type="email" placeholder="Enter Your Email">
+                        <i class="fa-solid fa-caret-right" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const proBtn = document.querySelector('#cart-btn');
+        const ProName = document.querySelector('#pro-name');
+        proBtn.addEventListener('click', function () {
+            localStorage.setItem("FoodItem: ", ProName.innerHTML);
+            console.log(ProName.innerHTML)
+        })
+    </script>
+</body>
+
+</html>

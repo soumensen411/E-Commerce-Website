@@ -1,0 +1,655 @@
+.container {
+    padding: 15px 80px;
+}
+
+/* ====================== nav ber  */
+.navber {
+    padding: 15px 80px;
+
+}
+
+.navber img {
+    width: 90px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link h3 {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.search-btn {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.148);
+}
+
+.search-btn input {
+    border: none;
+    padding: 5px 5px;
+    outline: none;
+    border-right: 1px solid #000;
+}
+
+/* =================================== banner section ====================== */
+
+.banner {
+    width: 100%;
+    margin-top: 20px;
+    /* height:80vh; */
+    background-image: url("images/Abstract.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 15%; */
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+
+.first-btn {
+    width: fit-content;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--primary-desing-color);
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 30px 0px;
+    font-weight: 700;
+    color: var(--primary-font-color);
+    cursor: pointer;
+}
+
+/* ===========================banner left part ================================ */
+.left-banner {
+    width: 50%;
+    height: 100%;
+
+}
+
+.left-banner h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.left-banner h1 span {
+    color: var(--primary-font-color);
+}
+
+.right-banner {
+    width: 50%;
+    height: 100%;
+
+}
+
+.order-btn {
+    margin-top: 50px;
+}
+
+.order-btn .btn1,
+.btn2 {
+    padding: 20px 40px;
+    border-radius: 9px;
+
+}
+.btn1 a{
+    text-decoration: none;
+    color: #fff;
+    z-index: 9;
+    position: relative;
+}
+.btn1 {
+    background-color: var(--primary-font-color);
+    /* background-color: #fff; */
+    color: #fff;
+    margin: 0px 35px 0px 0px;
+    border: 1px solid var(--primary-font-color);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.btn1::after{
+    content: " ";
+    transition: all ease 0.5s;
+    width: 100%;
+    height: 100%;
+    /* background-color:var(--primary-font-color); */
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -101%;
+    border-radius: 50%;
+    border: 1px solid var(--primary-font-color);
+}
+.btn1:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    border: 3px solid #fff;
+}
+.btn1:hover a {
+    z-index: 10;
+    color: #000;
+}
+.btn2 a{
+    text-decoration: none;
+    color: #000;
+    z-index: 9;
+    position: relative;
+}
+.btn2 {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid var(--primary-font-color);
+    position: relative;
+    overflow: hidden;
+}
+.btn2::after{
+    content: " ";
+    transition: all ease 0.5s;
+    width: 100%;
+    height: 100%;
+    background-color:var(--primary-font-color);
+    /* background-color: #fff; */
+    position: absolute;
+    left: 0;
+    bottom: -101%;
+    border-radius: 50%;
+    border: 1px solid var(--primary-font-color);
+}
+.btn2:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    border: 3px solid var(--primary-font-color);
+}
+.btn2:hover a {
+    z-index: 10;
+    color: #fff;
+}
+
+/* ==========================  banner right part ============================*/
+.right-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.cart {
+    text-align: center;
+}
+
+.cart img {
+    width: 200px;
+    height: 200px;
+}
+
+.cart span {
+    color: red;
+}
+
+/* =====================================  Location section =========================== */
+.location {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+
+    border-radius: 50px;
+
+}
+
+.icon {
+    padding: 10px;
+    background-color: var(--primary-font-color);
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    text-align: center;
+}
+
+.loc1 {
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loc1 h3 {
+    margin: 15px 0px;
+}
+
+.loc2 {
+    border-left: 1px solid #00000069;
+    padding: 0px 80px;
+    border-right: 1px solid #00000069;
+}
+
+
+/* =========================  product section  ===========================*/
+.title
+{
+    margin-top: 80px;
+    text-align: center;
+}
+.title p{
+    color: red;
+}
+.product {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 50px;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pro-cart {
+    width: 350px;
+    height: 390px;
+    /* background-color: red; */
+    border-radius: 15px;
+    overflow: hidden;
+    /* box-shadow: ; */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.089);
+
+    display: none;
+    
+}
+.pro-cart:nth-child(1),
+.pro-cart:nth-child(2),
+.pro-cart:nth-child(3),
+.pro-cart:nth-child(4),
+.pro-cart:nth-child(5),
+.pro-cart:nth-child(6){
+display: inline-block;
+}
+.pro-cart img {
+    width: 100%;
+    transition: all ease 0.5s;
+    
+}
+.pro-cart img:hover{
+    transform: scale(1.1);
+    
+}
+.pro-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 5px 10px;
+}
+.pro-1 span{
+    color: var(--primary-font-color);
+}
+.pro-2 {
+    padding: 5px 10px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pro-2 button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--primary-font-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#pro-btn{
+    position: absolute;
+    left: 43%;
+    padding: 10px 30px;
+    background-color: var(--primary-font-color);
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ==================================== service section ============================================= */
+
+
+.service{
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.service-card
+{
+    width: 320px;
+    height: 350px;
+    padding: 50px 10px;
+    /* background-color: red; */
+    border: 1px solid #533c3c4c;
+    transition: all ease 0.3s;
+    border-radius: 9px;
+}
+.service-card:hover{
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.096);
+}
+.ser-img{
+    /* padding: 10px 20px; */
+    position: relative;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-desing-color);
+    left: 35%;
+}
+.ser-img img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ser-content{
+    text-align: center;
+}
+.ser-content h1{
+    margin: 30px 0px;
+    font-size: 24px;
+}
+.ser-content p{
+    font-size: 14px;
+    font-weight: 500;
+}
+/* ====================================  testimonial section  ========================*/
+/* .testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+}
+.test-content{
+    width: 45%;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+}
+.inner-test-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0px;
+}
+.prep{
+    text-align: center;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+.test-img{
+    width: 30%;
+}
+.test-img img{
+    width: 100%;
+} */
+
+
+
+
+
+
+/* ===================================== testimonial section extra function adding ===================== */
+
+.testimonial{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+.swiper {
+    width: 40%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 10%;
+    
+  }
+  .swiper-slide {
+    text-align: center;
+    /* position: absolute; */
+    /* left: 30%; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .inner-test-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%px;
+    gap: 15px;
+    padding: 30px 00px ;
+  }
+.inner-test-content img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.prep{
+    padding: 10px 40px;
+}
+.prep p{
+    font-size: 14px;
+}
+
+.test-img{
+    text-align: center;
+    width: 50%;
+    /* background-color: red; */
+}
+
+.test-img img {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ======================= contact section ================== */
+.contact{
+    margin-top: 50px;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-sec{
+    width: 80%;
+    height: 300px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    border-radius: 15px;
+    /* justify-content: center; */
+}
+.cont-img{
+    width: 40%;
+    /* height: 100%; */
+}
+.cont-sec img{
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+.cont-title{
+    width: 40%;
+    color: #fff;
+}
+.cont-title h1{
+    margin: 20px 0px;
+}
+.cont-title p{
+    margin: 20px 0px;
+}
+.cont-form {
+    padding: 10px 0px 10px 15px;
+    background-color: #fff;
+    border-radius: 9px;
+}
+.cont-form input{
+    border: none;
+    outline: none;
+    width: 60%;
+}
+.cont-form button{
+    padding: 5px 25px;
+    background-color: var(--primary-font-color);
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+}
+/* ================= for mobile devices ================= */
+
+.mo-contact {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mo-cont-form {
+    width: 70%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mo-cont-form2 {
+    padding: 10px 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mo-cont-form input {
+    border: none;
+    outline: none;
+    width: 70%;
+}
+
+.mo-cont-form2 button {
+    padding: 5px 20px;
+    background-color: var(--primary-font-color);
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+}
+/* ================================= footer section ============================= */
+.footer{
+    margin-top: 80px;
+
+}
+.foot-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foot-container .first-foot{
+    width: 30%;
+}
+.first-foot img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.first-foot p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.first-foot
+.socal-icons i{
+    margin-top: 10px;
+    margin: 0px 25px;
+
+}
+
+.socal-icons img{
+    width: 40px;
+    cursor: pointer;
+    
+}
+.sec-foot h1{
+    font-size: 20px;
+    margin-bottom: 35px;
+    
+}
+.sec-foot p{
+    color: var(--primary-footer-color);
+    line-height: 1.8;
+}
+.third-foot h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.third-foot p{
+    color: var(--primary-footer-color);
+    line-height: 1.4;
+}
+.forth-foot p{
+    color: var(--primary-footer-color);
+    line-height: 1.8;
+}
+.forth-foot h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.forth-foot .input{
+    padding: 10px 10px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.forth-foot input{
+    border: none;
+    outline: none;
+}
