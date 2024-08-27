@@ -4,6 +4,8 @@ function locomotive(){
         smooth: true
     });
 }
+// locomotive();
+
 function click() {
     const toggleBtn = document.querySelector('#pro-btn');
     let currentItem = 6; 
@@ -29,15 +31,9 @@ function click() {
         isSeeMore = !isSeeMore;
     }
 } 
+click();
 
-function swiper(){
-    const subsbtn = document.getElementById('subs');
-        const emailInput = document.querySelector('#email-input');         
-        subsbtn.addEventListener('click', function() {
-            alert('Subscribe Successfull!')
-        });
-        
-
+function swiper(){        
         var swiper = new Swiper(".mySwiper", {
             navigation: {
               nextEl: ".swiper-button-next",
@@ -46,22 +42,40 @@ function swiper(){
           });
 
 }
-
-function addCart(){
-    // const proBtn = document.getElementById('cart-btn');
-    // const ProName = document.getElementById('pro-name');
-    // proBtn.addEventListener('click',function(){
-    //     localStorage.setItem("FoodItem: ",ProName.innerHTML);
-    //     console.log(ProName.innerHTML)
-    // })
-}
-// addCart();
-click();
 swiper();
-// locomotive();
 
+function localStorage(){
+    const proBtn = document.querySelector('#cart-btn');
+    const ProName = document.querySelector('#pro-name');
+    proBtn.addEventListener('click', function () {
+        localStorage.setItem("FoodItem: ", ProName.innerHTML);
+        console.log(ProName.innerHTML)
+    })
+}
+localStorage();
 
-// let key = prompt("Your Name: ")
-// let value = document.querySelectorAll('.pro-1 h1')
-// localStorage.setItem(key,value)
-// console.log(`${key} is ${localStorage.getItem(key)}`)
+function email(){
+    const subsbtn = document.querySelector('#subs');
+    const emailInput = document.querySelector('#email-input');  
+    const writediv = document.querySelector("#showemail")       
+    // emailInput.addEventListener('')
+    subsbtn.addEventListener('click', function() {
+        // alert('Subscribe Successfull!')
+        writediv.innerText = `"Email: ${emailInput.value} subscribe successfull"`; 
+        writediv.style.color= "#fff";
+    });
+    
+}
+email();
+function moemail() {
+    const subsbtn = document.querySelector('#mosubs');
+    const emailInput = document.querySelector('#moemail-input');  
+    const writediv = document.querySelector("#mo-subs"); 
+    
+    subsbtn.addEventListener('click', function() {
+        writediv.innerText = `Email: ${emailInput.value} subscribe successful`; 
+        writediv.style.color = "#000";
+    });
+}
+
+moemail();

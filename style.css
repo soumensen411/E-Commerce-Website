@@ -258,7 +258,7 @@ nav .nav-link {
     row-gap: 30px;
     column-gap: 50px;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .pro-cart {
@@ -550,15 +550,17 @@ display: inline-block;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    gap: 20px;
 }
 
 .mo-cont-form {
-    width: 70%;
+    width: 90%;
     height: 70px;
-    background-color: black;
+    /* background-color: ; */
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #000;
 }
 
 .mo-cont-form2 {

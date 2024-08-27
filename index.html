@@ -381,6 +381,7 @@
         <section class="testimonial container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
                         <div class="inner-test-content">
                             <img src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?t=st=1724477058~exp=1724480658~hmac=596abc6f477d06be89ad7a0435bc0eea5dbda8c9c933aa8251eca442bf8a1064&w=1060"
@@ -463,7 +464,9 @@
                     <div class="cont-form">
                         <input id="email-input" type="email" placeholder="type your email">
                         <button id="subs">Subscribe</button>
+                        
                     </div>
+                    <p id="showemail"></p>
                 </div>
             </div>
         </section>
@@ -472,10 +475,12 @@
         <section class="mo-contact">
             <div class="mo-cont-form">
                 <div class="mo-cont-form2">
-                    <input id="email-input" type="email" placeholder="type your email">
-                    <button id="subs" onclick="alert('Hello!')">Subscribe</button>
-                </div>
+                    <input id="moemail-input" type="email" placeholder="type your email">
+                    <button id="mosubs">Subscribe</button>
+                    
+                </div>     
             </div>
+            <p id="mo-subs"></p>
         </section>
 
         <!-- footer section  -->
@@ -529,17 +534,9 @@
         </div>
     </div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        const proBtn = document.querySelector('#cart-btn');
-        const ProName = document.querySelector('#pro-name');
-        proBtn.addEventListener('click', function () {
-            localStorage.setItem("FoodItem: ", ProName.innerHTML);
-            console.log(ProName.innerHTML)
-        })
-    </script>
 </body>
 
 </html>
